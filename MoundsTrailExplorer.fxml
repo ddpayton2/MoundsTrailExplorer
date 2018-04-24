@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="500.0" minWidth="500.0" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <VBox layoutX="225.0" layoutY="40.0" prefHeight="541.0" prefWidth="546.0">
+            <children>
+                <HBox prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Label fx:id="selectedTrailLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="105.0" prefWidth="549.0" text="TrAiL_sElEcTeD" textAlignment="CENTER" wrapText="true">
+                            <font>
+                                <Font name="Arial" size="46.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+                <HBox prefHeight="452.0" prefWidth="546.0">
+                    <children>
+                        <Pane prefHeight="449.0" prefWidth="97.0">
+                            <children>
+                                <Button alignment="TOP_CENTER" contentDisplay="BOTTOM" layoutX="1.0" layoutY="195.0" mnemonicParsing="false" onAction="#displayPreviousPicture" prefHeight="30.0" prefWidth="90.0" snapToPixel="false" text="Previous" textAlignment="CENTER" />
+                            </children>
+                        </Pane>
+                        <ImageView fx:id="pictureDisplayBox" fitHeight="449.0" fitWidth="361.0" pickOnBounds="true" preserveRatio="true" />
+                        <Pane prefHeight="550.0" prefWidth="100.0">
+                            <children>
+                                <Button contentDisplay="BOTTOM" layoutX="2.0" layoutY="210.0" mnemonicParsing="false" onAction="#displayNextPicture" prefHeight="30.0" prefWidth="90.0" text="Next" textAlignment="CENTER" />
+                            </children>
+                        </Pane>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+        <VBox layoutX="29.0" layoutY="31.0" prefHeight="541.0" prefWidth="196.0">
+            <children>
+                <GridPane prefHeight="547.0" prefWidth="196.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#trailOneSelect" prefHeight="75.0" prefWidth="125.0" text="Trail 1" GridPane.halignment="CENTER">
+                            <font>
+                                <Font name="Arial" size="22.0" />
+                            </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#trailTwoSelect" prefHeight="75.0" prefWidth="125.0" text="Trail 2" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                            <font>
+                                <Font name="Arial" size="22.0" />
+                            </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#trailThreeSelect" prefHeight="75.0" prefWidth="125.0" text="Trail 3" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                            <font>
+                                <Font name="Arial" size="22.0" />
+                            </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#trailFourSelect" prefHeight="75.0" prefWidth="125.0" text="Trail 4" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+                            <font>
+                                <Font name="Arial" size="22.0" />
+                            </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#trailFiveSelect" prefHeight="75.0" prefWidth="125.0" text="Trail 5" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+                            <font>
+                                <Font name="Arial" size="22.0" />
+                            </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#trailSixSelect" prefHeight="75.0" prefWidth="125.0" text="Trail 6" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+                            <font>
+                                <Font name="Arial" size="22.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </GridPane>
+            </children>
+        </VBox>
+    </children>
+</Pane>
