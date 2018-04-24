@@ -24,13 +24,13 @@
                     <children>
                         <Pane prefHeight="449.0" prefWidth="97.0">
                             <children>
-                                <Button alignment="TOP_CENTER" contentDisplay="BOTTOM" layoutX="1.0" layoutY="195.0" mnemonicParsing="false" onAction="#displayPreviousPicture" prefHeight="30.0" prefWidth="90.0" snapToPixel="false" text="Previous" textAlignment="CENTER" />
+                                <Button alignment="TOP_CENTER" contentDisplay="BOTTOM" layoutX="1.0" layoutY="195.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="90.0" snapToPixel="false" text="Previous" textAlignment="CENTER" />
                             </children>
                         </Pane>
                         <ImageView fx:id="pictureDisplayBox" fitHeight="449.0" fitWidth="361.0" pickOnBounds="true" preserveRatio="true" />
                         <Pane prefHeight="550.0" prefWidth="100.0">
                             <children>
-                                <Button contentDisplay="BOTTOM" layoutX="2.0" layoutY="210.0" mnemonicParsing="false" onAction="#displayNextPicture" prefHeight="30.0" prefWidth="90.0" text="Next" textAlignment="CENTER" />
+                                <Button contentDisplay="BOTTOM" layoutX="2.0" layoutY="210.0" mnemonicParsing="false"  prefHeight="30.0" prefWidth="90.0" text="Next" textAlignment="CENTER" />
                             </children>
                         </Pane>
                     </children>
@@ -52,32 +52,32 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                     <children>
-                        <Button mnemonicParsing="false" onAction="#trailOneSelect" prefHeight="75.0" prefWidth="125.0" text="Trail 1" GridPane.halignment="CENTER">
+                        <Button mnemonicParsing="false"  prefHeight="75.0" prefWidth="125.0" text="Trail 1" GridPane.halignment="CENTER">
                             <font>
                                 <Font name="Arial" size="22.0" />
                             </font>
                         </Button>
-                        <Button mnemonicParsing="false" onAction="#trailTwoSelect" prefHeight="75.0" prefWidth="125.0" text="Trail 2" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                        <Button mnemonicParsing="false"  prefHeight="75.0" prefWidth="125.0" text="Trail 2" GridPane.halignment="CENTER" GridPane.rowIndex="1">
                             <font>
                                 <Font name="Arial" size="22.0" />
                             </font>
                         </Button>
-                        <Button mnemonicParsing="false" onAction="#trailThreeSelect" prefHeight="75.0" prefWidth="125.0" text="Trail 3" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                        <Button mnemonicParsing="false"  prefHeight="75.0" prefWidth="125.0" text="Trail 3" GridPane.halignment="CENTER" GridPane.rowIndex="2">
                             <font>
                                 <Font name="Arial" size="22.0" />
                             </font>
                         </Button>
-                        <Button mnemonicParsing="false" onAction="#trailFourSelect" prefHeight="75.0" prefWidth="125.0" text="Trail 4" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+                        <Button mnemonicParsing="false"  prefHeight="75.0" prefWidth="125.0" text="Trail 4" GridPane.halignment="CENTER" GridPane.rowIndex="3">
                             <font>
                                 <Font name="Arial" size="22.0" />
                             </font>
                         </Button>
-                        <Button mnemonicParsing="false" onAction="#trailFiveSelect" prefHeight="75.0" prefWidth="125.0" text="Trail 5" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+                        <Button mnemonicParsing="false"  prefHeight="75.0" prefWidth="125.0" text="Trail 5" GridPane.halignment="CENTER" GridPane.rowIndex="4">
                             <font>
                                 <Font name="Arial" size="22.0" />
                             </font>
                         </Button>
-                        <Button mnemonicParsing="false" onAction="#trailSixSelect" prefHeight="75.0" prefWidth="125.0" text="Trail 6" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+                        <Button mnemonicParsing="false"  prefHeight="75.0" prefWidth="125.0" text="Trail 6" GridPane.halignment="CENTER" GridPane.rowIndex="5">
                             <font>
                                 <Font name="Arial" size="22.0" />
                             </font>
