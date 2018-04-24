@@ -11,13 +11,13 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="500.0" minWidth="500.0" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="500.0" minWidth="500.0" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #2fb556; " xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
     <children>
         <VBox layoutX="225.0" layoutY="40.0" prefHeight="541.0" prefWidth="546.0">
             <children>
                 <HBox prefHeight="100.0" prefWidth="200.0">
                     <children>
-                        <Label fx:id="selectedTrailLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="105.0" prefWidth="549.0" text="TrAiL_sElEcTeD" textAlignment="CENTER" wrapText="true">
+                        <Label fx:id="selectedTrailLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="105.0" prefWidth="549.0" text="Mounds Trail Explorer!" textAlignment="CENTER" wrapText="true">
                             <font>
                                 <Font name="Arial" size="46.0" />
                             </font>
