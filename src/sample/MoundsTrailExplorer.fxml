@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.image.*?>
-<?import javafx.scene.text.*?>
-<?import javafx.scene.control.*?>
-<?import java.lang.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="500.0" minWidth="500.0" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="500.0" minWidth="500.0" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
     <children>
         <VBox layoutX="225.0" layoutY="40.0" prefHeight="541.0" prefWidth="546.0">
             <children>
@@ -30,7 +34,7 @@
                         <ImageView fx:id="pictureDisplayBox" fitHeight="449.0" fitWidth="361.0" pickOnBounds="true" preserveRatio="true" />
                         <Pane prefHeight="550.0" prefWidth="100.0">
                             <children>
-                                <Button contentDisplay="BOTTOM" layoutX="2.0" layoutY="210.0" mnemonicParsing="false"  prefHeight="30.0" prefWidth="90.0" text="Next" textAlignment="CENTER" />
+                                <Button contentDisplay="BOTTOM" layoutX="2.0" layoutY="210.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="90.0" text="Next" textAlignment="CENTER" />
                             </children>
                         </Pane>
                     </children>
@@ -52,32 +56,32 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                     <children>
-                        <Button mnemonicParsing="false"  prefHeight="75.0" prefWidth="125.0" text="Trail 1" GridPane.halignment="CENTER">
+                        <Button mnemonicParsing="false" onAction="#testShit" prefHeight="75.0" prefWidth="125.0" text="Trail 1" GridPane.halignment="CENTER">
                             <font>
                                 <Font name="Arial" size="22.0" />
                             </font>
                         </Button>
-                        <Button mnemonicParsing="false"  prefHeight="75.0" prefWidth="125.0" text="Trail 2" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                        <Button mnemonicParsing="false" prefHeight="75.0" prefWidth="125.0" text="Trail 2" GridPane.halignment="CENTER" GridPane.rowIndex="1">
                             <font>
                                 <Font name="Arial" size="22.0" />
                             </font>
                         </Button>
-                        <Button mnemonicParsing="false"  prefHeight="75.0" prefWidth="125.0" text="Trail 3" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                        <Button mnemonicParsing="false" prefHeight="75.0" prefWidth="125.0" text="Trail 3" GridPane.halignment="CENTER" GridPane.rowIndex="2">
                             <font>
                                 <Font name="Arial" size="22.0" />
                             </font>
                         </Button>
-                        <Button mnemonicParsing="false"  prefHeight="75.0" prefWidth="125.0" text="Trail 4" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+                        <Button mnemonicParsing="false" prefHeight="75.0" prefWidth="125.0" text="Trail 4" GridPane.halignment="CENTER" GridPane.rowIndex="3">
                             <font>
                                 <Font name="Arial" size="22.0" />
                             </font>
                         </Button>
-                        <Button mnemonicParsing="false"  prefHeight="75.0" prefWidth="125.0" text="Trail 5" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+                        <Button mnemonicParsing="false" prefHeight="75.0" prefWidth="125.0" text="Trail 5" GridPane.halignment="CENTER" GridPane.rowIndex="4">
                             <font>
                                 <Font name="Arial" size="22.0" />
                             </font>
                         </Button>
-                        <Button mnemonicParsing="false"  prefHeight="75.0" prefWidth="125.0" text="Trail 6" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+                        <Button mnemonicParsing="false" prefHeight="75.0" prefWidth="125.0" text="Trail 6" GridPane.halignment="CENTER" GridPane.rowIndex="5">
                             <font>
                                 <Font name="Arial" size="22.0" />
                             </font>
