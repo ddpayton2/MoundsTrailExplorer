@@ -56,32 +56,38 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                     <children>
-                        <Button mnemonicParsing="false" onAction="#testShit" prefHeight="75.0" prefWidth="125.0" text="Trail 1" GridPane.halignment="CENTER">
+                        <Button mnemonicParsing="false" onAction="#selectTrailOneButton" prefHeight="75.0"
+                                prefWidth="125.0" text="Trail 1" GridPane.halignment="CENTER">
                             <font>
                                 <Font name="Arial" size="22.0" />
                             </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="75.0" prefWidth="125.0" text="Trail 2" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                        <Button mnemonicParsing="false" onAction="#selectTrailTwoButton" prefHeight="75.0"
+                                prefWidth="125.0" text="Trail 2" GridPane.halignment="CENTER" GridPane.rowIndex="1">
                             <font>
                                 <Font name="Arial" size="22.0" />
                             </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="75.0" prefWidth="125.0" text="Trail 3" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                        <Button mnemonicParsing="false" onAction="#selectTrailThreeButton" prefHeight="75.0"
+                                prefWidth="125.0" text="Trail 3" GridPane.halignment="CENTER" GridPane.rowIndex="2">
                             <font>
                                 <Font name="Arial" size="22.0" />
                             </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="75.0" prefWidth="125.0" text="Trail 4" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+                        <Button mnemonicParsing="false" onAction="#selectTrailFourButton" prefHeight="75.0"
+                                prefWidth="125.0" text="Trail 4" GridPane.halignment="CENTER" GridPane.rowIndex="3">
                             <font>
                                 <Font name="Arial" size="22.0" />
                             </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="75.0" prefWidth="125.0" text="Trail 5" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+                        <Button mnemonicParsing="false" onAction="#selectTrailFiveButton" prefHeight="75.0"
+                                prefWidth="125.0" text="Trail 5" GridPane.halignment="CENTER" GridPane.rowIndex="4">
                             <font>
                                 <Font name="Arial" size="22.0" />
                             </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="75.0" prefWidth="125.0" text="Trail 6" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+                        <Button mnemonicParsing="false" onAction="#selectTrailSixButton" prefHeight="75.0"
+                                prefWidth="125.0" text="Trail 6" GridPane.halignment="CENTER" GridPane.rowIndex="5">
                             <font>
                                 <Font name="Arial" size="22.0" />
                             </font>
