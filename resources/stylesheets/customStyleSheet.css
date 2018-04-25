@@ -1,0 +1,8 @@
+@font-face {
+    src: url("/fonts/Glametrix.otf");
+}
+.word-text{
+    -fx-font-family: "Glametrix";
+
+    -fx-font-size: 9pt;
+}
