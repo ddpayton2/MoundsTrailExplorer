@@ -28,13 +28,13 @@
                     <children>
                         <Pane prefHeight="449.0" prefWidth="97.0">
                             <children>
-                                <Button alignment="TOP_CENTER" contentDisplay="BOTTOM" layoutX="1.0" layoutY="195.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="90.0" snapToPixel="false" text="Previous" textAlignment="CENTER" />
+                                <Button  contentDisplay="BOTTOM" alignment="TOP_CENTER" layoutX="1.0" layoutY="195.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="90.0" snapToPixel="false" text="Previous" textAlignment="CENTER" />
                             </children>
                         </Pane>
                         <ImageView fx:id="pictureDisplayBox" fitHeight="449.0" fitWidth="361.0" pickOnBounds="true" preserveRatio="true" />
                         <Pane prefHeight="550.0" prefWidth="100.0">
                             <children>
-                                <Button contentDisplay="BOTTOM" layoutX="2.0" layoutY="210.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="90.0" text="Next" textAlignment="CENTER" />
+                                <Button contentDisplay="BOTTOM" alignment="TOP_CENTER" layoutX="1.0" layoutY="195.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="90.0" snapToPixel="false" text="Next" textAlignment="CENTER" />
                             </children>
                         </Pane>
                     </children>
