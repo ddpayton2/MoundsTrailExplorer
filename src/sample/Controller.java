@@ -18,9 +18,11 @@ public class Controller {
     private TrailSelectionOption trailSelectionOption = new TrailSelectionOption();
     private ArrayList<Image> currentSelection;
     private PictureDisplay currentDisplay;
+    private String currentTrailTitle;
 
     public void trailOneButtonSelected(ActionEvent actionEvent) {
         currentSelection = trailSelectionOption.getListOfPicturesGivenTrailNumber(1);
+        currentTrailTitle = trailSelectionOption.getTrailInformationGivenTrailNumber(1);
         currentDisplay = new PictureDisplay(currentSelection);
         pictureDisplayBox.setImage(currentDisplay.createFirstImage());
     }
@@ -28,30 +30,35 @@ public class Controller {
     public void trailTwoButtonSelected(ActionEvent actionEvent) {
         currentSelection = trailSelectionOption.getListOfPicturesGivenTrailNumber(2);
         currentDisplay = new PictureDisplay(currentSelection);
+        currentTrailTitle = trailSelectionOption.getTrailInformationGivenTrailNumber(2);
         pictureDisplayBox.setImage(currentDisplay.createFirstImage());
     }
 
     public void trailThreeButtonSelected(ActionEvent actionEvent) {
         currentSelection = trailSelectionOption.getListOfPicturesGivenTrailNumber(3);
         currentDisplay = new PictureDisplay(currentSelection);
+        currentTrailTitle = trailSelectionOption.getTrailInformationGivenTrailNumber(3);
         pictureDisplayBox.setImage(currentDisplay.createFirstImage());
     }
 
     public void trailFourButtonSelected(ActionEvent actionEvent) {
         currentSelection = trailSelectionOption.getListOfPicturesGivenTrailNumber(4);
         currentDisplay = new PictureDisplay(currentSelection);
+        currentTrailTitle = trailSelectionOption.getTrailInformationGivenTrailNumber(4);
         pictureDisplayBox.setImage(currentDisplay.createFirstImage());
     }
 
     public void trailFiveButtonSelected(ActionEvent actionEvent) {
         currentSelection = trailSelectionOption.getListOfPicturesGivenTrailNumber(5);
         currentDisplay = new PictureDisplay(currentSelection);
+        currentTrailTitle = trailSelectionOption.getTrailInformationGivenTrailNumber(5);
         pictureDisplayBox.setImage(currentDisplay.createFirstImage());
     }
 
     public void trailSixButtonSelected(ActionEvent actionEvent) {
         currentSelection = trailSelectionOption.getListOfPicturesGivenTrailNumber(6);
         currentDisplay = new PictureDisplay(currentSelection);
+        currentTrailTitle = trailSelectionOption.getTrailInformationGivenTrailNumber(6);
         pictureDisplayBox.setImage(currentDisplay.createFirstImage());
     }
 
