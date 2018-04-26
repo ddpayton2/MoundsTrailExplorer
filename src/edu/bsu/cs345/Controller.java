@@ -1,12 +1,9 @@
-package sample;
+package edu.bsu.cs345;
 
 import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
-import java.awt.*;
-import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 
 public class Controller {

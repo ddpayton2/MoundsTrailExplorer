@@ -1,4 +1,4 @@
-package sample;
+package edu.bsu.cs345;
 
 import java.util.ArrayList;
 

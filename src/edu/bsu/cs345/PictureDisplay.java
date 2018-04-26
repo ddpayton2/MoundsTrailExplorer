@@ -1,4 +1,4 @@
-package sample;
+package edu.bsu.cs345;
 import javafx.embed.swing.SwingFXUtils;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;

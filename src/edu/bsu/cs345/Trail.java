@@ -1,4 +1,4 @@
-package sample;
+package edu.bsu.cs345;
 
 public class Trail {
     private String trailName;
