@@ -1,8 +1,11 @@
 @font-face {
     src: url("/fonts/Glametrix.otf");
 }
+.background{
+    -fx-background-color: "Black";
+}
 .word-text{
     -fx-font-family: "Glametrix";
-
-    -fx-font-size: 16pt;
+    -fx-text-fill: "white";
+    -fx-font-size: 40pt;
 }
