@@ -24,11 +24,7 @@
                                 <Button alignment="TOP_CENTER" contentDisplay="BOTTOM" layoutX="1.0" layoutY="195.0" mnemonicParsing="false" onAction="#previousButtonSelected" prefHeight="30.0" prefWidth="90.0" snapToPixel="false" text="Previous" textAlignment="CENTER" />
                             </children>
                         </Pane>
-                  <VBox prefHeight="538.0" prefWidth="617.0">
-                     <children>
-                              <ImageView fx:id="pictureDisplayBox" fitHeight="217.0" fitWidth="347.0" pickOnBounds="true" preserveRatio="true"  smooth="false" />
-                     </children>
-                  </VBox>
+                        <ImageView fx:id="pictureDisplayBox" fitHeight="522.0" fitWidth="618.0" pickOnBounds="true" preserveRatio="true" smooth="false" />
                         <Pane prefHeight="538.0" prefWidth="100.0">
                             <children>
                                 <Button alignment="CENTER" contentDisplay="CENTER" layoutX="3.0" layoutY="203.0" mnemonicParsing="false" onAction="#nextButtonSelected" prefHeight="31.0" prefWidth="90.0" snapToPixel="false" text="Next" textAlignment="CENTER" />
