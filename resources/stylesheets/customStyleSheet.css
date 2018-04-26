@@ -4,8 +4,13 @@
 .background{
     -fx-background-color: "Black";
 }
-.word-text{
+.title-text{
     -fx-font-family: "Glametrix";
     -fx-text-fill: "white";
     -fx-font-size: 40pt;
+}
+.trail-description-text{
+    -fx-font-family: "Glametrix";
+    -fx-text-fill: "white";
+    -fx-font-size: 26pt;
 }
