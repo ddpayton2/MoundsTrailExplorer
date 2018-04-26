@@ -6,7 +6,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class TrailTest {
-    Trail trail = new Trail();
+    private Trail trail = new Trail();
     @Test
     public void checkTrailSetterAndGetter(){
         trail.setTrailName("Trail 1");
