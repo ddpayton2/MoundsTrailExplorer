@@ -14,12 +14,13 @@ import java.util.Objects;
         public ArrayList<BufferedImage> getListOfPicturesGivenTrailNumber(int trailNumber){
             ArrayList<BufferedImage> listOfAllPicturesInOneTrail = new ArrayList<>();
             File directory = new File("C:\\Users\\dgree\\IdeaProjects\\MoundsTrailExplorer\\resources\\Trail " + trailNumber);
-            String fileExtension = "jpg";
+            String[] fileExtension = new String[]{"jpg","JPG"};
 
             FilenameFilter fileFilter = new FilenameFilter() {
                 @Override
                 public boolean accept(File dir, String name) {
-                    if (name.endsWith("." + fileExtension)){
+                    for (int i = 0; i < fileExtension.length; i++)
+                    if (name.endsWith("." + fileExtension[i])){
                         return true;
                     }
                     return false;
