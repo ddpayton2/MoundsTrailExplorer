@@ -5,7 +5,6 @@ import javafx.scene.image.ImageView;
 import javafx.scene.image.PixelWriter;
 import javafx.scene.image.WritableImage;
 
-import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 
 public class PictureDisplay {
@@ -13,14 +12,14 @@ public class PictureDisplay {
         private ArrayList<Image> trailPicturesArray = new ArrayList<>();
         private int imagesIndex = 0;
 
-        PictureDisplay(ArrayList<Image> bufferedImages){
-            for (int i = 0; i < bufferedImages.size(); i++){
-                swapToImageView(bufferedImages.get(i));
+        PictureDisplay(ArrayList<Image> trailImages){
+            for (int i = 0; i < trailImages.size(); i++){
+                swapToImageView(trailImages.get(i));
             }
         }
 
-        private void swapToImageView(Image bufferedImage) {
-            trailPicturesArray.add(bufferedImage);
+        private void swapToImageView(Image trailImage) {
+            trailPicturesArray.add(trailImage);
         }
 
         protected Image createFirstImage(){
