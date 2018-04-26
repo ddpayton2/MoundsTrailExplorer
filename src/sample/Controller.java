@@ -1,31 +1,64 @@
 package sample;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.image.ImageView;
 
 import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.util.ArrayList;
 
 public class Controller {
 
-    public void selectTrailOneButton(ActionEvent selectTrailOne) {
+    public ImageView pictureDisplayBox;
+    /*private void changeTitleText(Button selectedButton, Label label) {
+            label.setText(selectedButton.getLabel());
+        }*/
+    private TrailSelectionOption trailSelectionOption = new TrailSelectionOption();
+    private ArrayList<BufferedImage> currentSelection;
+    private PictureDisplay currentDisplay;
 
+    public void trailOneButtonSelected(ActionEvent actionEvent) {
+        currentSelection = trailSelectionOption.getListOfPicturesGivenTrailNumber(1);
+        currentDisplay = new PictureDisplay(currentSelection);
+        pictureDisplayBox.setImage(currentDisplay.createFirstImage());
     }
 
-    public void selectTrailTwoButton(ActionEvent selectTrailOne) {
+    public void trailTwoButtonSelected(ActionEvent actionEvent) {
+        currentSelection = trailSelectionOption.getListOfPicturesGivenTrailNumber(2);
+        currentDisplay = new PictureDisplay(currentSelection);
+        pictureDisplayBox.setImage(currentDisplay.createFirstImage());
     }
 
-    public void selectTrailThreeButton(ActionEvent selectTrailOne) {
+    public void trailThreeButtonSelected(ActionEvent actionEvent) {
+        currentSelection = trailSelectionOption.getListOfPicturesGivenTrailNumber(3);
+        currentDisplay = new PictureDisplay(currentSelection);
+        pictureDisplayBox.setImage(currentDisplay.createFirstImage());
     }
 
-    public void selectTrailFourButton(ActionEvent selectTrailOne) {
+    public void trailFourButtonSelected(ActionEvent actionEvent) {
+        currentSelection = trailSelectionOption.getListOfPicturesGivenTrailNumber(4);
+        currentDisplay = new PictureDisplay(currentSelection);
+        pictureDisplayBox.setImage(currentDisplay.createFirstImage());
     }
 
-    public void selectTrailFiveButton(ActionEvent selectTrailOne) {
+    public void trailFiveButtonSelected(ActionEvent actionEvent) {
+        currentSelection = trailSelectionOption.getListOfPicturesGivenTrailNumber(5);
+        currentDisplay = new PictureDisplay(currentSelection);
+        pictureDisplayBox.setImage(currentDisplay.createFirstImage());
     }
 
-    public void selectTrailSixButton(ActionEvent selectTrailOne) {
+    public void trailSixButtonSelected(ActionEvent actionEvent) {
+        currentSelection = trailSelectionOption.getListOfPicturesGivenTrailNumber(6);
+        currentDisplay = new PictureDisplay(currentSelection);
+        pictureDisplayBox.setImage(currentDisplay.createFirstImage());
     }
 
-    private void changeTitleText(Button selectedButton, Label label) {
-        label.setText(selectedButton.getLabel());
+    public void previousButtonSelected(ActionEvent actionEvent) {
+        pictureDisplayBox.setImage(currentDisplay.getPreviousImage());
+    }
+
+    public void nextButtonSelected(ActionEvent actionEvent) {
+        pictureDisplayBox.setImage(currentDisplay.getNextImage());
     }
 }
