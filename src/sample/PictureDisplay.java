@@ -13,14 +13,14 @@ public class PictureDisplay {
         private ArrayList<Image> trailPicturesArray = new ArrayList<>();
         private int imagesIndex = 0;
 
-        PictureDisplay(ArrayList<BufferedImage> bufferedImages){
+        PictureDisplay(ArrayList<Image> bufferedImages){
             for (int i = 0; i < bufferedImages.size(); i++){
                 swapToImageView(bufferedImages.get(i));
             }
         }
 
-        private void swapToImageView(BufferedImage bufferedImage) {
-            trailPicturesArray.add(SwingFXUtils.toFXImage(bufferedImage, null));
+        private void swapToImageView(Image bufferedImage) {
+            trailPicturesArray.add(bufferedImage);
         }
 
         protected Image createFirstImage(){

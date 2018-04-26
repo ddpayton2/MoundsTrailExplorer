@@ -2,6 +2,7 @@ package sample;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
 import java.awt.*;
@@ -15,7 +16,7 @@ public class Controller {
             label.setText(selectedButton.getLabel());
         }*/
     private TrailSelectionOption trailSelectionOption = new TrailSelectionOption();
-    private ArrayList<BufferedImage> currentSelection;
+    private ArrayList<Image> currentSelection;
     private PictureDisplay currentDisplay;
 
     public void trailOneButtonSelected(ActionEvent actionEvent) {

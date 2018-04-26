@@ -1,5 +1,7 @@
 package sample;
 
+import javafx.scene.image.Image;
+
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -11,8 +13,8 @@ import java.util.Objects;
     public class TrailSelectionOption {
 
 
-        public ArrayList<BufferedImage> getListOfPicturesGivenTrailNumber(int trailNumber){
-            ArrayList<BufferedImage> listOfAllPicturesInOneTrail = new ArrayList<>();
+        public ArrayList<Image> getListOfPicturesGivenTrailNumber(int trailNumber){
+            ArrayList<Image> listOfAllPicturesInOneTrail = new ArrayList<>();
             File directory = new File("C:\\Users\\dgree\\IdeaProjects\\MoundsTrailExplorer\\resources\\Trail " + trailNumber);
             String[] fileExtension = new String[]{"jpg","JPG"};
 
@@ -27,16 +29,11 @@ import java.util.Objects;
                 }
             };
 
+
             if (directory.isDirectory()){
                 for (File f: Objects.requireNonNull(directory.listFiles(fileFilter))){
-                    BufferedImage img = null;
-                    try{
-                        img = ImageIO.read(f);
-                    }
-                    catch(IOException ioe){
-
-                    }
-                    listOfAllPicturesInOneTrail.add(img);
+                    Image image = new Image(f.toURI().toString());
+                    listOfAllPicturesInOneTrail.add(image);
                 }
             }
 
