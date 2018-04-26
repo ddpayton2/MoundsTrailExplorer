@@ -15,7 +15,7 @@ import java.util.Objects;
         }
 
         public ArrayList<Image> getListOfPicturesGivenTrailNumber(int trailNumber){
-            File directory = new File("C:\\Users\\dgree\\IdeaProjects\\MoundsTrailExplorer\\resources\\Trail " + trailNumber);
+            File directory = new File("./resources/Trail " + trailNumber);
             String[] fileExtension = new String[]{"jpg","JPG", "png"};
             FilenameFilter fileFilter = createFileFilter(fileExtension);
             return createImageList(directory, fileFilter);
