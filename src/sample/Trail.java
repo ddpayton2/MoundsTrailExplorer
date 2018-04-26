@@ -1,10 +1,13 @@
 package sample;
 
 public class Trail {
-    String trailName;
-    String difficulty;
-    String description;
-    int mileage;
+    private String trailName;
 
+    public String getTrailName() {
+        return trailName;
+    }
 
+    public void setTrailName(String trailName) {
+        this.trailName = trailName;
+    }
 }

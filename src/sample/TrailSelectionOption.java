@@ -8,7 +8,11 @@ import java.util.Objects;
 
     public class TrailSelectionOption {
 
-        ArrayList<Trail> trailList = new ArrayList<>();
+        TrailBuilder builder = new TrailBuilder();
+
+        protected String getTrailInformationGivenTrailNumber(int trailNumber){
+            return builder.getTrailInformation(trailNumber);
+        }
 
         public ArrayList<Image> getListOfPicturesGivenTrailNumber(int trailNumber){
             File directory = new File("C:\\Users\\dgree\\IdeaProjects\\MoundsTrailExplorer\\resources\\Trail " + trailNumber);
