@@ -1,20 +1,15 @@
 package edu.bsu.cs345;
-import javafx.embed.swing.SwingFXUtils;
 import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
-import javafx.scene.image.PixelWriter;
-import javafx.scene.image.WritableImage;
-
 import java.util.ArrayList;
 
-public class PictureDisplay {
+class PictureDisplay {
 
         private ArrayList<Image> trailPicturesArray = new ArrayList<>();
         private int imagesIndex = 0;
 
         PictureDisplay(ArrayList<Image> trailImages){
-            for (int i = 0; i < trailImages.size(); i++){
-                swapToImageView(trailImages.get(i));
+            for (Image trailImage : trailImages) {
+                swapToImageView(trailImage);
             }
         }
 
@@ -22,11 +17,11 @@ public class PictureDisplay {
             trailPicturesArray.add(trailImage);
         }
 
-        protected Image createFirstImage(){
+    Image createFirstImage() {
             return trailPicturesArray.get(imagesIndex);
         }
 
-        protected Image getNextImage(){
+    Image getNextImage() {
             if (imagesIndex == trailPicturesArray.size() - 1){
                 imagesIndex = 0;
             }
@@ -36,7 +31,7 @@ public class PictureDisplay {
             return trailPicturesArray.get(imagesIndex);
         }
 
-        protected Image getPreviousImage(){
+    Image getPreviousImage() {
             if (imagesIndex == 0){
                 imagesIndex = trailPicturesArray.size()-1;
             }

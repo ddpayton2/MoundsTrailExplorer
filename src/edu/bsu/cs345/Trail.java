@@ -1,13 +1,13 @@
 package edu.bsu.cs345;
 
-public class Trail {
+class Trail {
     private String trailName;
 
-    public String getTrailName() {
+    String getTrailName() {
         return trailName;
     }
 
-    public void setTrailName(String trailName) {
+    void setTrailName(String trailName) {
         this.trailName = trailName;
     }
 }
