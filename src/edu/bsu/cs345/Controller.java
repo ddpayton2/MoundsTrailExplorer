@@ -3,8 +3,10 @@ package edu.bsu.cs345;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+
 
 import javax.sound.midi.SysexMessage;
 import java.util.ArrayList;
@@ -12,6 +14,7 @@ import java.util.ArrayList;
 public class Controller {
 
     public ImageView pictureDisplayBox;
+    public Label trailTitleLabel;
     private TrailSelectionOption trailSelectionOption = new TrailSelectionOption();
     private ArrayList<Image> currentSelection;
     private PictureDisplay currentDisplay;
@@ -30,6 +33,7 @@ public class Controller {
         currentTrailTitle = trailSelectionOption.getTrailInformationGivenTrailNumber(trailNumber);
         currentDisplay = new PictureDisplay(currentSelection);
         pictureDisplayBox.setImage(currentDisplay.createFirstImage());
+            trailTitleLabel.setText(currentTrailTitle);
     }
 
     }
