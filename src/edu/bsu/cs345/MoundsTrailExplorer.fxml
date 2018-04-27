@@ -17,7 +17,8 @@
         <VBox layoutX="200.0" prefHeight="600.0" prefWidth="800.0">
             <children>
                   <Label fx:id="selectedTrailLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="105.0" prefWidth="800.0" styleClass="title-text" text="Mounds Trail Explorer!" textAlignment="CENTER" wrapText="true" />
-            <Label alignment="CENTER" prefHeight="43.0" prefWidth="800.0" styleClass="trail-description-text" text="Please Select A trail From The List On The Left" />
+                <Label fx:id="trailTitleLabel" alignment="CENTER" prefHeight="43.0" prefWidth="800.0"
+                       styleClass="trail-description-text" text="Please Select A trail From The List On The Left"/>
                 <HBox prefHeight="576.0" prefWidth="728.0">
                     <children>
                         <Pane prefHeight="538.0" prefWidth="96.0">
