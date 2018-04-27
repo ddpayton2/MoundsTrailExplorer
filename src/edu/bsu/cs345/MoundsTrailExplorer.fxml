@@ -47,7 +47,7 @@
             </Pane>
         </HBox>
     </VBox>
-    <VBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+    <VBox  styleClass="selection-background" alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
           prefHeight="600.0" prefWidth="200.0">
         <children>
             <GridPane alignment="CENTER" prefHeight="589.0" prefWidth="199.0">

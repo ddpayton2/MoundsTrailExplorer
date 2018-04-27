@@ -3,6 +3,26 @@
 }
 .background{
     -fx-background-color: "Black";
+    -fx-background-image: url("../../../../resources/Icons/blurredbarnbackground.jpg");
+
+}
+.title-background{
+    -fx-background-image: url("../../../../resources/Icons/background.png");
+
+}
+.selection-background{
+    -fx-background-image: url("../../../../resources/Icons/background2.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+.selection-background2{
+
+    -fx-background-size: 10, 10;
+    -fx-background-position: 20, 20;
+    -fx-background-color: "Red";
+
+
+
 }
 .title-text{
     -fx-font-family: "Glametrix";
