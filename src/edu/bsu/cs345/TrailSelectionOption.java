@@ -14,12 +14,14 @@ import java.util.Objects;
             return builder.getTrailInformation(trailNumber);
         }
 
+        //Some of the picture files uploaded by phones are stored a little differently. They don't cause any issues with viewing so we have surpressed these warnings.
         public ArrayList<Image> getListOfPicturesGivenTrailNumber(int trailNumber){
             File directory = new File("./resources/Trail " + trailNumber);
             String[] fileExtension = new String[]{"jpg","JPG", "png"};
             FilenameFilter fileFilter = createFileFilter(fileExtension);
             return createImageList(directory, fileFilter);
         }
+
 
         private ArrayList<Image> createImageList(File directory, FilenameFilter fileFilter){
             ArrayList<Image> listOfAllPicturesInOneTrail = new ArrayList<>();
@@ -31,6 +33,7 @@ import java.util.Objects;
             }
             return listOfAllPicturesInOneTrail;
         }
+
 
         private FilenameFilter createFileFilter(String[] fileExtension){
             return (dir, name) -> {
