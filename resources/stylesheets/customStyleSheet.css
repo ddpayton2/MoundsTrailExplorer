@@ -7,7 +7,7 @@
 
 }
 .title-background{
-    -fx-background-image: url("../../../../resources/Icons/titlebackground2.png");
+    -fx-background-image: url("../../../../resources/Icons/titlebackground.png");
     -fx-background-position: center;
     -fx-background-size: 650 115;
     -fx-background-repeat: no-repeat;
