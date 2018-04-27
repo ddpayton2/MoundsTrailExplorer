@@ -13,10 +13,7 @@ public class Main extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("MoundsTrailExplorer.fxml"));
         primaryStage.setTitle("Mounds State Park Trail Explorer");
         primaryStage.setScene(new Scene(root));
-        primaryStage.resizableProperty();
         primaryStage.setResizable(false);
         primaryStage.show();
-        System.out.println(primaryStage.getWidth());
-        System.out.println(primaryStage.getHeight());
     }
 }
