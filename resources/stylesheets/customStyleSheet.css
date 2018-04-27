@@ -1,8 +1,16 @@
 @font-face {
     src: url("/fonts/Glametrix.otf");
 }
-.word-text{
+.background{
+    -fx-background-color: "Black";
+}
+.title-text{
     -fx-font-family: "Glametrix";
-
-    -fx-font-size: 16pt;
+    -fx-text-fill: "white";
+    -fx-font-size: 40pt;
+}
+.trail-description-text{
+    -fx-font-family: "Glametrix";
+    -fx-text-fill: "white";
+    -fx-font-size: 26pt;
 }
