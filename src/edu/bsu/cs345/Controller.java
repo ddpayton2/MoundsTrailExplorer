@@ -8,10 +8,12 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import java.util.ArrayList;
 
+
 public class Controller {
 
     public ImageView pictureDisplayBox;
     public Label trailTitleLabel;
+
     private TrailSelectionOption trailSelectionOption = new TrailSelectionOption();
     private ArrayList<Image> currentSelection;
     private PictureDisplay currentDisplay;

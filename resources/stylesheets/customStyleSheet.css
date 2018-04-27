@@ -7,11 +7,14 @@
 
 }
 .title-background{
-    -fx-background-image: url("../../../../resources/Icons/background.png");
+    -fx-background-image: url("../../../../resources/Icons/titlebackground2.png");
+    -fx-background-position: center;
+    -fx-background-size: 650 115;
+    -fx-background-repeat: no-repeat;
 
 }
 .selection-background{
-    -fx-background-image: url("../../../../resources/Icons/background2.png");
+    -fx-background-image: url("../../../../resources/Icons/buttonbackground.png");
     -fx-background-repeat: no-repeat;
     -fx-background-position: center;
 }
