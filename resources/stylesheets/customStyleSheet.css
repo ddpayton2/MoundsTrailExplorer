@@ -18,12 +18,12 @@
 }
 .title-text{
     -fx-font-family: "Glametrix";
-    -fx-text-fill: "white";
+    -fx-text-fill: "yellow";
     -fx-font-size: 40pt;
 }
 .trail-description-text{
     -fx-font-family: "Glametrix";
-    -fx-text-fill: "white";
+    -fx-text-fill: "yellow";
     -fx-font-size: 26pt;
 }
 
